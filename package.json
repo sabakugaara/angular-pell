@@ -1,0 +1,33 @@
+{
+  "name": "angular-pell",
+  "version": "0.0.0",
+  "description": "Angular 4 and Angular 5 plugin for pell WYSIWYG HTML Rich Text Editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabakugaara/angular-pell.git"
+  },
+  "keywords": [
+    "angular",
+    "pell",
+    "rich",
+    "editor"
+  ],
+  "author": "Gaara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sabakugaara/angular-pell/issues"
+  },
+  "homepage": "https://github.com/sabakugaara/angular-pell#readme",
+  "peerDependencies": {
+    "@angular/common": "^5.2.5",
+    "@angular/core": "^5.2.5"
+  },
+  "devDependencies": {
+    "@angular/common": "^5.2.5",
+    "@angular/core": "^5.2.5"
+  }
+}
