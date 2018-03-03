@@ -1,22 +1,25 @@
-import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation } from '@angular/core';
-import pell from './pell';
+import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
+import * as pell from './pell';
 
 @Component({
   selector: 'pell-editor',
-  template: `<div #pell></div>`,
+  templateUrl: './pell.component.html',
   styleUrls: ['./pell.component.css'],
-  encapsulation: ViewEncapsulation.None,
 })
 export class PellComponent implements OnInit {
-  @ViewChild("pell")
-  el: ElementRef;
+  actions = Object.keys(pell.actions).map(action => pell.actions[action]);
+  actionBarClass = 'pell-actionbar';
+  actionButtonClass = 'pell-button';
+  contentClass = 'pell-content';
 
+  @Output()
+  onChange = new EventEmitter<string>()
   constructor() { }
 
   ngOnInit() {
-    pell.init({
-      onChange: _ => {},
-      element: this.el.nativeElement,
-    });
+  }
+
+  onInput(event: any) {
+    this.onChange.emit(event.target.innerHTML);
   }
 }

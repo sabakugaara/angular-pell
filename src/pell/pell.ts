@@ -1,4 +1,4 @@
-const actions = {
+export const actions = {
   bold: {
     icon: '<b>B</b>',
     title: 'Bold',
