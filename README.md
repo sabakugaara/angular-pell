@@ -3,12 +3,13 @@ Angular 5 component for pell WYSIWYG HTML Rich Text Editor. https://github.com/j
 
 ## HowTo
 
-1. install
+### install
+
 ```
 npm install angular-pell
 ```
 
-2. import `PellModule`
+### import `PellModule`
 
 update `app.module.ts`:
 ```
@@ -22,7 +23,7 @@ import { PellModule } from 'angular-pell'
 export class AppModule { }
 ```
 
-3. use `pell-editor` component
+### use it
 
 ```
 <pell-editor></pell-editor>
